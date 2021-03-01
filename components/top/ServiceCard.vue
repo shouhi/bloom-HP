@@ -1,17 +1,16 @@
 <template lang="pug">
 v-col(cols="12" md="4" class="card")
-  v-hover(v-slot="{hover}")
-    v-card.mx-auto(style="padding:3rem;" flat min-height="300" :elevation="hover ? 12 : 2" :class="{ 'on-hover' : hover}")
-      p.topic-number() {{num+1}}
-      p.title.text-center.font-weight-bold {{value.title}}
-      a(:href="value.path")
-        v-img(
-            class="white--text align-end"
-            contain
-            max-height="300"
-            :src='require(`~/assets/images/topics/${num+1}.png`)'
-        )
-      v-card-text.text-center {{value.description}}
+  v-card.mx-auto(style="padding:3rem;" flat min-height="300")
+    p.service-number() {{num+1}}
+    p.title.text-center.font-weight-bold {{value.title}}
+    a(:href="value.path")
+      v-img(
+          class="white--text align-end"
+          contain
+          max-height="300"
+          :src='require(`~/assets/images/services/${num+1}.png`)'
+      )
+    v-card-text.text-center {{value.description}}
 
 </template>
 
@@ -40,7 +39,7 @@ export default {
 .card {
   margin-top: 30px;
 }
-.topic-number {
+.service-number {
   font-size: 6rem;
   font-weight: bold;
   color: #00000010;

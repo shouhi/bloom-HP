@@ -2,34 +2,39 @@
 Section.topics  
   v-row
     v-col
-      h2.display-2.font-weight-bold TOPICS
-      h3 新着情報
+      h2.display-2.font-weight-bold SERVICE
+      h3 事業内容
   v-row
-    topic-card(
-      v-for="(topic, key) in topics" :key="key"
-      :value="topic"
+    service-card(
+      v-for="(service, key) in services" :key="key"
+      :value="service"
       :num="key"
     )
 </template>
 
 <script>
-import TopicCard from '~/components/top/TopicCard.vue'
+import ServiceCard from '~/components/top/ServiceCard.vue'
 export default {
   components: {
-    TopicCard,
+    ServiceCard,
   },
   data() {
     return {
-      topics: [
+      services: [
+        {
+          title: 'Bloom',
+          description: '学生と店舗のマッチングサービス',
+          image: 'https://cdn.vuetifyjs.com/images/cards/docks.jpg',
+        },
         {
           title: 'SEEDAS',
-          description: '関学生3名と大工大1名の学生でカフェ経営👏',
+          description: '学生と店舗のマッチングサービス',
           image: 'https://cdn.vuetifyjs.com/images/cards/docks.jpg',
-          path: 'https://www.instagram.com/sthills_cafe/',
+          path: 'https://www.instagram.com/seedas_/',
         },
         {
           title: 'ProTask',
-          description: '大学課題管理アプリが3月リリースです！',
+          description: '大学課題管理アプリ',
           image: 'https://cdn.vuetifyjs.com/images/cards/docks.jpg',
           path: 'https://protaskg.studio.site/',
         },
