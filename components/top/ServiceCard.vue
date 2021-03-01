@@ -37,6 +37,9 @@ export default {
 </script>
 <style scoped>
 .card {
+  border: 1px solid;
+  border-bottom: transparent;
+  border-top: transparent;
   margin-top: 30px;
 }
 .service-number {

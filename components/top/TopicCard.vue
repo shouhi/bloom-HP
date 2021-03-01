@@ -2,7 +2,6 @@
 v-col(cols="12" md="4" class="card")
   v-hover(v-slot="{hover}")
     v-card.mx-auto(style="padding:3rem;" flat min-height="300" :elevation="hover ? 12 : 2" :class="{ 'on-hover' : hover}")
-      p.topic-number() {{num+1}}
       p.title.text-center.font-weight-bold {{value.title}}
       a(:href="value.path")
         v-img(

@@ -1,5 +1,5 @@
 <template lang="pug">
-Section.topics  
+Section.services  
   v-row
     v-col
       h2.display-2.font-weight-bold SERVICE
@@ -44,13 +44,13 @@ export default {
 }
 </script>
 <style scoped>
-.topics {
+.services {
   height: 100%;
   /* margin-top: 20px; */
   /* background-color: lightpink; */
 }
 h2 {
-  margin-top: 50px;
+  margin-top: 100px;
   text-align: center;
 }
 h3 {
