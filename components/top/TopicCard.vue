@@ -6,8 +6,8 @@ v-col(cols="12" md="4" class="card")
     v-img(
         class="white--text align-end"
         contain
-        max-height="250"
-        :src='require(`~/assets/images/topics/${num+1}.JPG`)'
+        max-height="300"
+        :src='require(`~/assets/images/topics/${num+1}.png`)'
 
     )
     v-card-text.text-center {{value.description}}
@@ -45,7 +45,7 @@ export default {
   color: #00000010;
   float: left;
   position: absolute;
-  left: 8px;
+  left: 10px;
   top: 0;
   line-height: 1;
   z-index: 3;

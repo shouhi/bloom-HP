@@ -3,13 +3,13 @@ Section.topics
   v-row
     v-col
       h2.display-2.font-weight-bold TOPICS
-      h2.display-1.font-weight-bold 新着情報
+      h3 新着情報
   v-row
-  topic-card(
-    v-for="(topic, key) in topics" :key="key"
-    :value="topic"
-    :num="key"
-  )
+    topic-card(
+      v-for="(topic, key) in topics" :key="key"
+      :value="topic"
+      :num="key"
+    )
 </template>
 
 <script>
@@ -26,6 +26,11 @@ export default {
           description: '関学生3名と大工大1名の学生でカフェ経営👏',
           image: 'https://cdn.vuetifyjs.com/images/cards/docks.jpg',
         },
+        {
+          title: 'ProTask',
+          description: '大学課題管理アプリが3月リリースです！',
+          image: 'https://cdn.vuetifyjs.com/images/cards/docks.jpg',
+        },
       ],
     }
   },
@@ -38,7 +43,12 @@ export default {
   /* background-color: lightpink; */
 }
 h2 {
-  margin: 3rem 0px;
+  margin-top: 50px;
   text-align: center;
+}
+h3 {
+  text-align: center;
+  font-size: 25px;
+  color: gold;
 }
 </style>
