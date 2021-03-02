@@ -16,10 +16,15 @@ export default {}
   height: 100%;
   background-size: cover;
   background-image: url('~@/assets/images/garden.jpeg');
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.3);
   background-blend-mode: lighten;
 }
 .font-weight-bold {
   font-size: 50px;
+}
+</style>
+<style scoped>
+h1 {
+  color: white;
 }
 </style>
