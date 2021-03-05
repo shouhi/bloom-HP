@@ -22,8 +22,6 @@ export default {}
 .font-weight-bold {
   font-size: 50px;
 }
-</style>
-<style scoped>
 h1 {
   color: white;
 }

@@ -25,6 +25,7 @@ export default {
           title: 'Bloom',
           description: '学生と店舗のマッチングサービス',
           image: 'https://cdn.vuetifyjs.com/images/cards/docks.jpg',
+          path: 'https://b-loom-official.studio.site/',
         },
         {
           title: 'SEEDAS',

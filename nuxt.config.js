@@ -9,15 +9,72 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - bloom-HP',
-    title: 'bloom-HP',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'ja',
+      prefix: 'og: http://ogp.me/ns#',
     },
+    title: 'Bloom | 学生と企業のマッチングサービス',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Bloomは学生と企業をつなぐマッチングサービスです。',
+      },
+      { hid: 'og:locale', property: 'og:locale', content: 'ja_JP' },
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: 'Bloom | 学生と企業のマッチングサービス',
+      },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: 'https://b-loom.jp' },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Bloom | 学生と企業のマッチングサービス',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Bloomは学生と企業をつなぐマッチングサービスです。',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://kaite.team/ogp.png',
+      },
+      {
+        hid: 'og:image:secure_url',
+        property: 'og:image:secure_url',
+        content: 'https://kaite.team/ogp.png',
+      },
+      {
+        hid: 'og:image:width',
+        property: 'og:image:width',
+        content: '1200',
+      },
+      {
+        hid: 'og:image:height',
+        property: 'og:image:height',
+        content: '630',
+      },
+      {
+        name: 'twitter:image',
+        content: 'https://kaite.team/ogp.png',
+      },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: '@' },
+      { name: 'twitter:creator', content: '@' },
+      {
+        name: 'twitter:title',
+        content: 'Bloom | 学生と企業のマッチングサービス',
+      },
+      {
+        name: 'twitter:description',
+        content: 'Bloomは学生と企業をつなぐマッチングサービスです。',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
