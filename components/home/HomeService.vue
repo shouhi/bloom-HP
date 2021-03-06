@@ -23,7 +23,7 @@ export default {
       services: [
         {
           title: 'Bloom',
-          description: '学生と店舗のマッチングサービス',
+          description: '学生と経営者が情報交換できる飲食店',
           image: 'https://cdn.vuetifyjs.com/images/cards/docks.jpg',
           path: 'https://b-loom-official.studio.site/',
         },
